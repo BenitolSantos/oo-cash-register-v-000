@@ -12,7 +12,7 @@ class CashRegister
   end
   def apply_discount
     @total = @total - (@total.to_f * @discount.to_f/100).to_i
-    #to float because pecentage and back to I
+    #to float because pecentage and back to Integer
     #discount is a percent because it expects 200 off not 20
     puts "After the discount, the total comes to #{@total}"
   end
