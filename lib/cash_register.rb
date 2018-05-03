@@ -4,7 +4,8 @@ class CashRegister
   #because it returns a total
   def initialize(discount = 0) #argument with a default value of 0
     @total = 0
-    @items = [] #items should be an attribute
+    @items = [] #items should be an attribute, which means no method needed,
+    #also not a class variable.
     @discount = discount #everything instance variable becomes an attribute
   end
   def add_item(title,price,quantity = 1) #defaulted to 1
