@@ -11,9 +11,13 @@ class CashRegister
     #on failure. so I changed it
   end
   def apply_discount
-    @total = @total - (@total.to_f * @discount.to_f/100).to_i
-    #to float because pecentage and back to Integer
-    #discount is a percent because it expects 200 off not 20
-    return "After the discount, the total comes to $#{@total}."
+    if @discount == 0
+      return "There is no discount to apply."
+    else
+      @total = @total - (@total.to_f * @discount.to_f/100).to_i
+      #to float because pecentage and back to Integer
+      #discount is a percent because it expects 200 off not 20
+      return "After the discount, the total comes to $#{@total}."
+    end
   end
 end
