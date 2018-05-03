@@ -11,4 +11,6 @@ class CashRegister
     #on failure.
   end
   def apply_discount
+    
+  end
 end
