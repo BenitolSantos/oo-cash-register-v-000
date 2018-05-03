@@ -13,7 +13,8 @@ class CashRegister
     @title = title
     quantity.times {@items << @title} #add as many items as needed.
     #the quantity of each to the array
-    @current_transaction = (price * quantity)
+    @current_transaction = (price * quantity) #created this just so it can be voided
+    #if the customer wants to save money
     @total += (price * quantity) #float
     #expected `cash_register.total` to have changed by 15.0, but was changed by 5.0
     #on failure. so I changed it
