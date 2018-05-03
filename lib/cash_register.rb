@@ -14,6 +14,5 @@ class CashRegister
     @total = @total - (@total * (@discount/100))
     #discount is a percent because it expects 200 off not 20
     puts "After the discount, the total comes to #{@total}"
-    @total
   end
 end
