@@ -10,4 +10,5 @@ class CashRegister
     #expected `cash_register.total` to have changed by 15.0, but was changed by 5.0
     #on failure.
   end
+  def apply_discount
 end
