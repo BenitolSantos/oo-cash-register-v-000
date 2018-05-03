@@ -6,6 +6,6 @@ class CashRegister
     @discount = discount #everything instance variable becomes an attribute
   end
   def add_item(title,price)
-    
+    @total += price 
   end
 end
