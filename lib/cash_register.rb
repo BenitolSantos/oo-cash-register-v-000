@@ -25,7 +25,4 @@ class CashRegister
     end
   end
 
-  def items
-    self.item
-  end
 end
