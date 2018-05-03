@@ -11,6 +11,6 @@ class CashRegister
     #on failure.
   end
   def apply_discount
-    self.total - @discount
+    @total = @total - @discount
   end
 end
