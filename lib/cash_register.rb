@@ -11,7 +11,7 @@ class CashRegister
     #on failure.
   end
   def apply_discount
-    @total = @total - @total.percent(@discount) #discount is a percent
+    @total = @total - @total.percent(@discount) #discount is a percent because it expects 200 off not 20
     @total
   end
 end
