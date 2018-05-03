@@ -13,7 +13,7 @@ class CashRegister
   def apply_discount
     @total = @total - (@total * (@discount/100))
     #discount is a percent because it expects 200 off not 20
-    puts "After the discount, the total comes to $800"
+    puts "After the discount, the total comes to #{@total}"
     @total
   end
 end
