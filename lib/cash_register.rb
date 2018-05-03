@@ -10,7 +10,7 @@ class CashRegister
   end
   def add_item(title,price,quantity = 1) #defaulted to 1
     @title = title
-    quantity.times {@items << @title} #add as many items as needed. 
+    quantity.times {@items << @title} #add as many items as needed.
     #the quantity of each to the array
     @total += (price * quantity)
     #expected `cash_register.total` to have changed by 15.0, but was changed by 5.0
