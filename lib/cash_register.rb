@@ -10,7 +10,7 @@ class CashRegister
   end
   def add_item(title,price,quantity = 1) #defaulted to 1
     @title = title
-    quantity.times do (@items << @title)  #
+    quantity.times {@items << @title}
     @total += (price * quantity)
     #expected `cash_register.total` to have changed by 15.0, but was changed by 5.0
     #on failure. so I changed it
