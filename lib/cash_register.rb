@@ -11,7 +11,7 @@ class CashRegister
     #on failure. so I changed it
   end
   def apply_discount
-    @total = @total - @discount.float
+    @total = @total - (@total.float * @discount.float/100)
     #discount is a percent because it expects 200 off not 20
     puts "After the discount, the total comes to #{@total}"
   end
