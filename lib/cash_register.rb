@@ -1,4 +1,5 @@
 class CashRegister
+  @@items = []
   attr_accessor :discount,:total #discount is a attribute, total is an atrribute too
   #because it returns a total
   def initialize(discount = 0) #argument with a default value of 0
@@ -22,6 +23,6 @@ class CashRegister
   end
 
   def items
-    
+
   end
 end
